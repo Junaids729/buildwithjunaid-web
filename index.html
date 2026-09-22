@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build With Junaid | B2B Automation Architectures</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: { 
+                        brand: { 500: '#2563eb', 600: '#1d4ed8' },
+                        void: '#07090f',
+                        neon: { cyan: '#00f0ff', violet: '#8a2be2' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { background-color: #f8fafc; color: #0f172a; }
+        .hero-pattern { background-image: radial-gradient(#e2e8f0 1px, transparent 1px); background-size: 24px 24px; }
+        .glass {
+            background: linear-gradient(145deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 100%);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.6);
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-brand-500 selection:text-white flex flex-col min-h-screen">
+
+    <!-- Navigation -->
+    <nav class="w-full fixed top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-xl font-bold tracking-tight text-slate-900">
+                Build With Junaid
+            </div>
+            <a href="#contact" class="text-sm font-semibold text-brand-600 hover:text-brand-500 transition-colors">
+                Contact
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="flex-grow pt-32 pb-16 px-6 relative z-10 hero-pattern">
+        <section class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
+            
+            <!-- Left Text Content -->
+            <div class="flex flex-col items-start space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-brand-600 text-xs font-bold tracking-wide uppercase">
+                    B2B Automation Agency
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-slate-900">
+                    We automate your agency's manual workflows so you can scale without hiring.
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-lg">
+                    Stop copying and pasting. I map your plain-English workflows into executable architectures that capture, enrich, and route leads in seconds.
+                </p>
+                <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 font-bold text-white bg-brand-600 rounded-lg shadow-lg hover:bg-brand-500 hover:shadow-xl transition-all">
+                    Secure Your Pipeline
+                </a>
+            </div>
+            
+            <!-- Right 3D Image Pop-Out -->
+            <div class="relative flex justify-center lg:justify-end mt-12 lg:mt-0">
+                <div class="w-72 h-72 lg:w-96 lg:h-96 rounded-full glass relative group flex items-end justify-center shadow-[0_0_40px_rgba(37,99,235,0.1)] transition-all duration-700 hover:shadow-[0_0_60px_rgba(37,99,235,0.2)]">
+                    
+                    <!-- Inner Glowing Circle -->
+                    <div class="absolute inset-4 rounded-full bg-gradient-to-b from-blue-100 to-white group-hover:from-blue-200 group-hover:to-blue-50 transition-all duration-500 overflow-hidden border border-white/50 shadow-inner"></div>
+                    
+                    <!-- The 3D Pop-Out Image -->
+                    <img src="junaid-transparent.png" onerror="this.src='https://placehold.co/600x800/transparent/2563eb?text=Your+Transparent+Pic'" alt="Junaid Shariff" class="relative z-10 w-[85%] h-auto object-contain transform scale-110 -translate-y-4 group-hover:scale-125 group-hover:-translate-y-10 transition-transform duration-500 drop-shadow-[0_20px_20px_rgba(0,0,0,0.15)] filter saturate-110">
+                    
+                    <!-- Floating Tech Badge -->
+                    <div class="absolute bottom-8 -left-4 lg:-left-8 bg-white px-4 py-2 rounded-lg text-xs font-bold text-brand-600 border border-slate-100 z-20 shadow-xl animate-bounce" style="animation-duration: 3s;">
+                        System Architect
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Outcomes Grid -->
+        <section class="max-w-6xl mx-auto mb-24">
+            <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Architectures That Drive Revenue</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-lg bg-blue-50 text-brand-600 flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Automated Lead Routing</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Instantly route incoming leads from any platform directly into your CRM and Slack. Zero manual data entry required.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-lg bg-blue-50 text-brand-600 flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Client Onboarding Systems</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Trigger contracts, generate Google Drive folders, and dispatch welcome emails the exact second a deal is marked 'Closed Won'.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+                    <div class="w-12 h-12 rounded-lg bg-blue-50 text-brand-600 flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Autonomous Outreach</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        AI-driven systems that enrich lead data and draft hyper-personalized pitches on autopilot to keep your sales pipeline full.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder Bio -->
+        <section class="max-w-3xl mx-auto bg-slate-900 text-white rounded-3xl p-10 mb-24 shadow-2xl">
+            <h3 class="text-2xl font-bold mb-4">The Architect Behind the Systems</h3>
+            <p class="text-slate-300 leading-relaxed text-lg">
+                Hi, I'm Junaid. I build custom automation architectures for high-growth agencies. My goal is simple: remove the manual bottleneck from your daily operations so your team can focus on closing deals, not data entry. I don't just sell software; I sell your time back.
+            </p>
+        </section>
+
+        <!-- Contact Form (Conversion Engine) -->
+        <section id="contact" class="max-w-2xl mx-auto mb-24">
+            <div class="bg-white p-10 rounded-3xl shadow-xl border border-slate-200">
+                <div class="text-center mb-8">
+                    <h2 class="text-3xl font-bold text-slate-900 mb-3">Secure Your Pipeline</h2>
+                    <p class="text-slate-600">Enter your details below. I will personally review your bottleneck and map out an automation solution.</p>
+                </div>
+                
+                <!-- FormSubmit Integration -->
+                <form action="https://formsubmit.co/junaid@buildwithjunaid.com" method="POST" class="space-y-5">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_subject" value="New B2B Lead from BuildWithJunaid.com!">
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Full Name</label>
+                            <input type="text" name="Name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-slate-700 mb-1">Work Email</label>
+                            <input type="email" name="Email" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">Agency / Company Name</label>
+                        <input type="text" name="Agency Name" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-slate-700 mb-1">What is your biggest operational bottleneck?</label>
+                        <textarea name="Bottleneck" rows="4" required class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 outline-none transition-colors"></textarea>
+                    </div>
+                    <button type="submit" class="w-full py-4 bg-brand-600 text-white font-bold rounded-lg shadow-md hover:bg-brand-500 transition-colors">
+                        Submit Architecture Request
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with Compliance Links -->
+    <footer class="w-full bg-white border-t border-slate-200 mt-auto">
+        <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
+            <p>© 2026 Build With Junaid. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="terms.html" class="hover:text-slate-800 transition-colors">Terms & Conditions</a>
+                <a href="privacy.html" class="hover:text-slate-800 transition-colors">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
