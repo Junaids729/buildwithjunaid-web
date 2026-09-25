@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-    <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Build With Junaid | B2B Automation Agency</title>
@@ -56,28 +56,32 @@
         }
     </style>
 </head>
-<body class="antialiased selection:bg-brand-500 selection:text-white flex flex-col min-h-screen">
+<body class="antialiased selection:bg-brand-500 selection:text-white flex flex-col min-h-screen relative">
 
-    <!-- Navigation -->
+    <!-- Background Pattern -->
+    <div class="fixed inset-0 hero-pattern opacity-50 pointer-events-none -z-10"></div>
+
+    <!-- Navigation (LinkedIn Removed) -->
     <nav class="w-full fixed top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <!-- Brand Logo & Name -->
             <a href="#" class="flex items-center gap-2.5 group">
-                <img src="favicon.ico" alt="BWJ Logo" class="w-6 h-6 object-contain transform group-hover:scale-110 transition-transform duration-300">
+                <img src="favicon.ico?v=2" alt="BWJ Logo" class="w-6 h-6 object-contain transform group-hover:scale-110 transition-transform duration-300">
                 <span class="text-xl font-bold text-slate-900 tracking-tight group-hover:text-brand-600 transition-colors">Build With Junaid</span>
             </a>
             
-            <!-- Contact / LinkedIn -->
+            <!-- Contact -->
             <div class="flex items-center gap-6">
                 <a href="#contact" class="text-sm font-semibold text-slate-600 hover:text-brand-600 transition-colors">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <main class="flex-grow pt-32 pb-16 px-6 relative z-10 hero-pattern">
-        <section class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
-            
+    <!-- Main Content -->
+    <main class="flex-grow pt-32">
+        
+        <!-- Hero Section -->
+        <section class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-24">
             <!-- Left Text Content -->
             <div class="flex flex-col items-start space-y-6">
                 <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-200 text-brand-600 text-xs font-bold tracking-wide uppercase">
@@ -94,7 +98,7 @@
                 </a>
             </div>
             
-           <!-- Right 3D Image Pop-Out (Mobile UI Fix Applied) -->
+            <!-- Right 3D Image Pop-Out -->
             <div class="relative flex justify-center lg:justify-end mt-12 lg:mt-0">
                 <div class="w-72 h-72 lg:w-96 lg:h-96 rounded-full glass relative group flex items-end justify-center shadow-[0_0_40px_rgba(37,99,235,0.1)] transition-all duration-700 hover:shadow-[0_0_60px_rgba(37,99,235,0.2)]">
                     
@@ -102,26 +106,25 @@
                     
                     <img src="Junaid.png" alt="Junaid Shariff" class="relative z-10 w-[115%] h-auto object-contain transform origin-bottom -translate-y-2 group-hover:scale-105 group-hover:-translate-y-4 transition-transform duration-500 drop-shadow-[0_20px_25px_rgba(0,0,0,0.18)] filter saturate-110">
                     
-                    <!-- Mobile UI Fix: left-0 for mobile, -left-8 for desktop -->
+                    <!-- Mobile UI Fix -->
                     <div class="absolute bottom-10 left-0 lg:-left-8 bg-white px-5 py-2.5 rounded-xl text-xs font-bold text-brand-600 border border-slate-100 z-20 shadow-xl animate-bounce" style="animation-duration: 3s;">
                         System Architect
                     </div>
                 </div>
             </div>
-        </div>
         </section>
-                        <!-- Trust Badges (Infinite Scrolling Marquee) -->
-        <div class="mt-16 pt-8 border-t border-slate-200 w-full overflow-hidden">
+
+        <!-- Trust Badges (Infinite Scrolling Marquee) - TRULY FULL WIDTH -->
+        <div class="w-full border-t border-b border-slate-200 py-10 overflow-hidden bg-white/50 relative mb-24">
             <p class="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-8 text-center">Architectures powered by industry standards</p>
             
-            <div class="relative max-w-4xl mx-auto flex overflow-hidden">
-                <!-- White fade gradients on the edges for a clean entrance/exit -->
+            <div class="relative max-w-5xl mx-auto flex overflow-hidden">
+                <!-- White fade gradients on the edges -->
                 <div class="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#f8fafc] to-transparent z-10 pointer-events-none"></div>
                 <div class="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#f8fafc] to-transparent z-10 pointer-events-none"></div>
                 
                 <!-- The Moving Track -->
                 <div class="animate-scroll gap-16 opacity-80 hover:opacity-100 transition-opacity duration-300">
-                    
                     <!-- Set 1 -->
                     <div class="flex items-center gap-3"><img src="n8n.png" alt="n8n" class="h-7 w-auto object-contain"><span class="font-bold text-slate-700 text-lg">n8n</span></div>
                     <div class="flex items-center gap-3"><img src="airtable.png" alt="Airtable" class="h-7 w-auto object-contain"><span class="font-bold text-slate-700 text-lg">Airtable</span></div>
@@ -129,19 +132,18 @@
                     <div class="flex items-center gap-3"><img src="python.png" alt="Python" class="h-7 w-auto object-contain"><span class="font-bold text-slate-700 text-lg">Python</span></div>
                     <div class="flex items-center gap-3"><img src="slack.png" alt="Slack" class="h-7 w-auto object-contain"><span class="font-bold text-slate-700 text-lg">Slack</span></div>
                     
-                    <!-- Set 2 (Exact Duplicate for the Seamless Loop) -->
+                    <!-- Set 2 -->
                     <div class="flex items-center gap-3 ml-16"><img src="n8n.png" alt="n8n" class="h-7 w-auto object-contain"><span class="font-bold text-slate-700 text-lg">n8n</span></div>
                     <div class="flex items-center gap-3"><img src="airtable.png" alt="Airtable" class="h-7 w-auto object-contain"><span class="font-bold text-slate-700 text-lg">Airtable</span></div>
                     <div class="flex items-center gap-3"><img src="apollo.png" alt="Apollo" class="h-7 w-auto object-contain"><span class="font-bold text-slate-700 text-lg">Apollo.io</span></div>
                     <div class="flex items-center gap-3"><img src="python.png" alt="Python" class="h-7 w-auto object-contain"><span class="font-bold text-slate-700 text-lg">Python</span></div>
                     <div class="flex items-center gap-3"><img src="slack.png" alt="Slack" class="h-7 w-auto object-contain"><span class="font-bold text-slate-700 text-lg">Slack</span></div>
-                    
                 </div>
             </div>
         </div>
 
         <!-- The Outcomes Grid -->
-        <section class="max-w-6xl mx-auto mb-24">
+        <section class="max-w-6xl mx-auto px-6 mb-24">
             <h2 class="text-3xl font-bold text-center text-slate-900 mb-12">Architectures That Drive Revenue</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
@@ -175,26 +177,25 @@
         </section>
 
         <!-- Founder Bio -->
-        <section class="max-w-3xl mx-auto bg-slate-900 text-white rounded-3xl p-10 mb-24 shadow-2xl">
-            <h3 class="text-2xl font-bold mb-4">The Architect Behind the Systems</h3>
-            <p class="text-slate-300 leading-relaxed text-lg">
-                Hi, I'm Junaid. I build custom automation architectures for high-growth agencies. My goal is simple: remove the manual bottleneck from your daily operations so your team can focus on closing deals, not data entry. I don't just sell software; I sell your time back.
-            </p>
+        <section class="max-w-3xl mx-auto px-6 mb-24">
+            <div class="bg-slate-900 text-white rounded-3xl p-10 shadow-2xl">
+                <h3 class="text-2xl font-bold mb-4">The Architect Behind the Systems</h3>
+                <p class="text-slate-300 leading-relaxed text-lg">
+                    Hi, I'm Junaid. I build custom automation architectures for high-growth agencies. My goal is simple: remove the manual bottleneck from your daily operations so your team can focus on closing deals, not data entry. I don't just sell software; I sell your time back.
+                </p>
+            </div>
         </section>
 
-        <!-- Contact Form (Conversion Engine) -->
-        <section id="contact" class="max-w-2xl mx-auto mb-24">
+        <!-- Contact Form -->
+        <section id="contact" class="max-w-2xl mx-auto px-6 mb-24">
             <div class="bg-white p-10 rounded-3xl shadow-xl border border-slate-200">
                 <div class="text-center mb-8">
                     <h2 class="text-3xl font-bold text-slate-900 mb-3">Secure Your Pipeline</h2>
                     <p class="text-slate-600">Enter your details below. I will personally review your bottleneck and map out an automation solution.</p>
                 </div>
                 
-                <!-- FormSubmit Integration -->
                 <form action="https://formsubmit.co/junaid@buildwithjunaid.com" method="POST" class="space-y-5">
-                    <!-- Prevent Redirect to FormSubmit -->
                     <input type="hidden" name="_next" value="https://buildwithjunaid.com/success">
-    <!-- Honeypot for Spambots -->
                     <input type="text" name="_honey" style="display:none">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_subject" value="New B2B Lead from BuildWithJunaid.com!">
@@ -225,7 +226,7 @@
         </section>
     </main>
 
-    <!-- Footer with Compliance Links -->
+    <!-- Footer -->
     <footer class="w-full bg-white border-t border-slate-200 mt-auto">
         <div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center text-sm text-slate-500">
             <p>© 2026 Build With Junaid. All rights reserved.</p>
